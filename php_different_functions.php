@@ -1,32 +1,55 @@
 <?php
-#Different kinds of functions
+// Different kinds of functions
 
-#Built-in functions
-echo strlen("Hello, world!");
+// Built-in function
+// strlen: Returns the length of a string
+echo "<b>Built-in Function:</b><br>";
+echo strlen("Hello, world!") . "<br>";
+/* Output:
+13
+*/
 
-#User defined function
-function add($a,$b){
-    return $a+$b;
+// User-defined function
+// add: Adds two numbers
+function add($a, $b) {
+    return $a + $b;
 }
-echo add(2,3);
+echo "<b>User-defined Function:</b><br>";
+echo add(2, 3) . "<br>";
+/* Output:
+5
+*/
 
-#Anonymous Functions: creation of functions without specified name
-$greet=function($name){
+// Anonymous Function
+// Creates a function without a specified name
+$greet = function($name) {
     return "Hello, $name!";
 };
-echo $greet("PHP");
-
-/*Arow functions
-Syntax: 
-$variableName = fn($parameter1, $parameter2) => $expression;
+echo "<b>Anonymous Function:</b><br>";
+echo $greet("PHP") . "<br>";
+/* Output:
+Hello, PHP!
 */
-$add=fn($a,$b)=>$a+$b;
-echo $add(2,3);
 
-#Variable functions
-function sayHello(){
-    echo "hello, world";
+// Arrow Functions
+// Short syntax for defining anonymous functions
+$add = fn($a, $b) => $a + $b;
+echo "<b>Arrow Function:</b><br>";
+echo $add(2, 3) . "<br>";
+/* Output:
+5
+*/
+
+// Variable Functions
+// Calls a function using a variable containing the function name
+function sayHello() {
+    echo "hello, world<br>";
 }
-$func='sayHello';
+$func = 'sayHello';
+echo "<b>Variable Function:</b><br>";
 $func();
+/* Output:
+hello, world
+*/
+
 ?>

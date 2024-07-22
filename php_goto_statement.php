@@ -11,5 +11,9 @@ echo "I am not executed";
 skip:
 
 echo "I am executed after $num"
+/*
+Output:
+I am executed after 5
+*/
 
 ?>

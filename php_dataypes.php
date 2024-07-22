@@ -55,5 +55,8 @@ $array=(array)$person;
 $array_set=array('name'=>'Alice','age'=>25);
 $object=(object)$array_set;
 echo $object->age;
+/*Output
+25
+*/
 
 ?>

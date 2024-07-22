@@ -1,47 +1,64 @@
 <?php
-#Functions without parameter
-function sayHello(){
-    echo "Hello world";
+// Functions without parameters
+function sayHello() {
+    echo "Hello world<br>";
 }
 sayHello();
+/* Output:
+Hello world
+*/
 
-#Functions with parameter
-function greet($name){
-    echo "Hello,$name!";
+// Functions with parameters
+function greet($name) {
+    echo "Hello, $name!<br>";
 }
 greet("John");
+/* Output:
+Hello, John!
+*/
 
-#Default parameter functions
-function say($name="Guest"){
-    echo "hello, $name!";
+// Default parameter functions
+function say($name = "Guest") {
+    echo "Hello, $name!<br>";
 }
 say("Alex");
 say();
+/* Output:
+Hello, Alex!
+Hello, Guest!
+*/
 
-#Functions with multiple parameters
-function add($a,$b){
-    return $a+$b;
+// Functions with multiple parameters
+function add($a, $b) {
+    return $a + $b;
 }
-echo add(10,20);
+echo add(10, 20) . "<br>";
+/* Output:
+30
+*/
 
-#Function with passing by reference
-function addNum(&$num)
-{
+// Functions with passing by reference
+function addNum(&$num) {
     $num++;
 }
-$value=5;
+$value = 5;
 addNum($value);
-echo $value;
+echo $value . "<br>";
+/* Output:
+6
+*/
 
-
-#Funcations with variable number of parameters
-function sum(...$numbers){
-  $total=0;
-  foreach($numbers as $number){
-    $total+=$number;
-  }
-  return $total;
+// Functions with variable number of parameters
+function sum(...$numbers) {
+    $total = 0;
+    foreach ($numbers as $number) {
+        $total += $number;
+    }
+    return $total;
 }
-echo sum(1,2,3);
+echo sum(1, 2, 3) . "<br>";
+/* Output:
+6
+*/
 
 ?>

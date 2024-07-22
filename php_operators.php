@@ -1,66 +1,93 @@
 <?php
-#Different kind of php operators
+// Different kinds of PHP operators
 
 #Arithmetic Operators
 
-//addition
-$a=2+3;
+// Addition
+$a = 2 + 3; // $a = 5
+echo "Addition: $a <br>"; // Output: Addition: 5
 
-//subtractio
-$b=10-5;
+// Subtraction
+$b = 10 - 5; // $b = 5
+echo "Subtraction: $b <br>"; // Output: Subtraction: 5
 
-//multiplication
-$c= 10*6;
+// Multiplication
+$c = 10 * 6; // $c = 60
+echo "Multiplication: $c <br>"; // Output: Multiplication: 60
 
-//Division
-$d=60/10;
+// Division
+$d = 60 / 10; // $d = 6
+echo "Division: $d <br>"; // Output: Division: 6
 
-//Modulus Operator
-$e=7%2;
+// Modulus Operator
+$e = 7 % 2; // $e = 1
+echo "Modulus: $e <br>"; // Output: Modulus: 1
 
-//Exponential operator
-$f= 7**6;
+// Exponential Operator
+$f = 7 ** 6; // $f = 117649
+echo "Exponential: $f <br>"; // Output: Exponential: 117649
 
+#Comparison Operators
 
-#Comparision operators
+// Equal ('==')
+$g = ($a == $b); // true
+echo "Equal: ";
+var_dump($g); // Output: bool(true)
 
-//Equal('=='): checks if two values are equal
-$a==$b;
+// Strictly Equal ('===')
+$h = ($a === $b); // false
+echo "Strictly Equal: ";
+var_dump($h); // Output: bool(false)
 
-//Strictly equal('==='): checks two values are equal along with same data type
-$a===$b;
+// Not Equal ('!=')
+$i = ($a != $b); // false
+echo "Not Equal: ";
+var_dump($i); // Output: bool(false)
 
-//Not Equal
-$a!=$b;
+// Not Strictly Equal ('!==')
+$j = ($a !== $b); // true
+echo "Not Strictly Equal: ";
+var_dump($j); // Output: bool(true)
 
-//Not Stricly Equal
-$a!==$b;
+// Greater Than ('>')
+$k = ($a > $b); // false
+echo "Greater Than: ";
+var_dump($k); // Output: bool(false)
 
-//Greater than
-$a>$b;
+// Less Than ('<')
+$l = ($a < $b); // false
+echo "Less Than: ";
+var_dump($l); // Output: bool(false)
 
-//Less than
-$a<$b;
+// Greater Than or Equal To ('>=')
+$m = ($a >= $b); // true
+echo "Greater Than or Equal To: ";
+var_dump($m); // Output: bool(true)
 
-//Greater than or equal to('>=')
-$a>=$b;
+// Less Than or Equal To ('<=')
+$n = ($a <= $b); // true
+echo "Less Than or Equal To: ";
+var_dump($n); // Output: bool(true)
 
-//Less than or equal to
-$a<=$b;
+#Logical Operators
 
+// AND ('&&' or 'and')
+$result1 = ($a > 5 && $a < 10); // true
+echo "AND: ";
+var_dump($result1); // Output: bool(true)
 
-#Logical Opertors
+// OR ('||' or 'or')
+$result2 = ($a > 5 || $b < 10); // true
+echo "OR: ";
+var_dump($result2); // Output: bool(true)
 
-//AND('&&' or 'and'):if both conditions are true
-$result=($a>5 && $a< 10);
+// NOT ('!' or 'not')
+$result3 = !($a > 5); // false
+echo "NOT: ";
+var_dump($result3); // Output: bool(false)
 
-//OR('||' or 'or') : if one condition is true
-$result= ($a>5 || $b< 10);
-
-//NOT('!' or 'not): returns true if the condition is false
-$result=!($a>5);
-
-//XOR('xor'): returns true if one condition is true and the other is false
-$result=($a>5 xor $b<10);
-
+// XOR ('xor')
+$result4 = ($a > 5 xor $b < 10); // false
+echo "XOR: ";
+var_dump($result4); // Output: bool(false)
 ?>

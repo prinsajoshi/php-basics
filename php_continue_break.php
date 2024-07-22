@@ -6,7 +6,7 @@ for($i=0;$i<10;$i++){
     if ($i==5){
         break;  //exit loop when the $i=5
     }
-    echo "The number is: $i \n";
+    echo "The number is: $i";
 }
 
 #php continue
