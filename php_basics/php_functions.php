@@ -1,5 +1,5 @@
 <?php
-// Functions without parameters
+#Functions without parameters
 function sayHello() {
     echo "Hello world<br>";
 }
@@ -8,7 +8,7 @@ sayHello();
 Hello world
 */
 
-// Functions with parameters
+#Functions with parameters
 function greet($name) {
     echo "Hello, $name!<br>";
 }
@@ -17,7 +17,7 @@ greet("John");
 Hello, John!
 */
 
-// Default parameter functions
+#Default parameter functions
 function say($name = "Guest") {
     echo "Hello, $name!<br>";
 }
@@ -28,7 +28,7 @@ Hello, Alex!
 Hello, Guest!
 */
 
-// Functions with multiple parameters
+#Functions with multiple parameters
 function add($a, $b) {
     return $a + $b;
 }
@@ -37,7 +37,19 @@ echo add(10, 20) . "<br>";
 30
 */
 
-// Functions with passing by reference
+#Functions with passing argument by value
+function addNum1($num) {
+    $num++;
+}
+$value = 5;
+addNum1($value);
+echo $value . "<br>";
+/* Output:
+5
+*/
+
+
+#Functions with passing argument by reference
 function addNum(&$num) {
     $num++;
 }
@@ -48,7 +60,7 @@ echo $value . "<br>";
 6
 */
 
-// Functions with variable number of parameters
+#Functions with variable number of parameters
 function sum(...$numbers) {
     $total = 0;
     foreach ($numbers as $number) {
@@ -60,5 +72,19 @@ echo sum(1, 2, 3) . "<br>";
 /* Output:
 6
 */
+
+
+#Recursive Function
+function factorial($n) {
+    if ($n == 0) {
+        return 1;
+    }
+    // Recursive case: $n * factorial of ($n - 1)
+    else {
+        return $n * factorial($n - 1);
+    }
+}
+echo factorial(5); 
+// Output: 120
 
 ?>

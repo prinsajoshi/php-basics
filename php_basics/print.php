@@ -77,4 +77,22 @@ array (
   2 => 'cherry',
 )
 */
+
+#Using printf(): used to format and output a string
+/*
+Syntax:
+printf(format, argument1, argument2, ...);
+
+Common Format Codes
+%s - String
+%d - Decimal number (integer)
+%f - Floating-point number
+%x - Hexadecimal number
+%o - Octal number
+*/
+$name = "John";
+$age = 30;
+
+printf("Name: %s, Age: %d", $name, $age);
+
 ?>
