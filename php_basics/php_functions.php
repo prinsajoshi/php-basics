@@ -70,6 +70,7 @@ function sum(...$numbers) {
 }
 echo sum(1, 2, 3) . "<br>";
 /* Output:
+
 6
 */
 
