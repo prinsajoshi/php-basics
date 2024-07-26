@@ -1,7 +1,6 @@
 <?php
 require 'db.php';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user = $conn->real_escape_string($_POST['username']);
     $email = $conn->real_escape_string($_POST['email']);
 
@@ -13,5 +12,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         echo "Error while inserting value: " . $conn->error . "<br>";
     }
-}
+
 ?>
