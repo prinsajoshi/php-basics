@@ -74,7 +74,6 @@ echo sum(1, 2, 3) . "<br>";
 6
 */
 
-
 #Recursive Function
 function factorial($n) {
     if ($n == 0) {
