@@ -1,0 +1,9 @@
+Abstract classes:
+-Can have both abstract and non abstract methods
+-Can contain properties
+-Can provide deafult behaviour(implemented methods)
+
+Interfaces:
+-can only have method declarations(no method bodies)
+-cannot contain properties
+-a class can implement multiple interfaces(php supports multiple inheritance through interfaces)
