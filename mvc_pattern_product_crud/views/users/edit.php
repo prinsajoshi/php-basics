@@ -1,0 +1,18 @@
+<!-- views/users/edit.php -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit User</title>
+</head>
+<body>
+    <h1>Edit User</h1>
+    <form action="/product/mvc_pattern_crud/?action=update&id=<?php echo $user['user_id']; ?>" method="post">
+        <label>Name:</label>
+        <input type="text" name="name" value="<?php echo $user['name']; ?>" required>
+        <label>Email:</label>
+        <input type="email" name="email" value="<?php echo $user['email']; ?>" required>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
