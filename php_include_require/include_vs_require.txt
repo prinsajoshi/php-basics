@@ -1,0 +1,7 @@
+// include_example.php
+include 'somefile.php'; // If 'somefile.php' is not found, the script will continue
+
+// require_example.php
+require 'somefile.php'; // If 'somefile.php' is not found, the script will halt
+
+Both include_once and require_once are similar to include and require, respectively, but they ensure that the file is included only once during the script execution, avoiding potential issues with multiple inclusions.
